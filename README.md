@@ -29,3 +29,15 @@
 
 1.     
 2.
+
+#### AnyNet-master/together.py —— 2020/2/29
+1、安装了skimage包，安装过程如下：
+```
+sudo pip3 install --upgrade setuptools
+sudo pip3 install scikit-image -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+```
+2、cuda没问题，但cudnn有异常，
+按照：[参考文章](https://blog.csdn.net/Ocean_waver/article/details/102730467)
+最后一句运行有错，显示cudnn冲突，似乎pytorch安装之后cudnn有过改动，anynet是否可用还有待验证。
+
+3、考虑下载使用anynet部分新代码，以适配 jetson nano 上的 pytorch1.0 和 cuda10。
